@@ -26,7 +26,7 @@ void addBook() {
     newBook->isIssued = 0;
     newBook->next = head;
     head = newBook;
-    printf("Book Added Successfully!\n");
+    printf("BOOK ADDED SUCCESSFULLY!\n");
 }
 
 
@@ -54,16 +54,16 @@ void issueBook() {
         if (temp->bookID == bookID) {
             if (temp->isIssued == 0) {
                 temp->isIssued = 1;
-                printf("Book Issued Successfully!\n");
+                printf("BOOK ISSUED SUCCESSFULLY!\n");
                 return;
             } else {
-                printf("Book is already issued.\n");
+                printf("BOOK ISSUED ALREADY.\n");
                 return;
             }
         }
         temp = temp->next;
     }
-    printf("Book not found!\n");
+    printf("BOOK NOT FOUND::!\n");
 }
 
 
@@ -76,22 +76,22 @@ void returnBook() {
         if (temp->bookID == bookID) {
             if (temp->isIssued == 1) {
                 temp->isIssued = 0;
-                printf("Book Returned Successfully!\n");
+                printf("BOOK RETURNED SUCCESSFULLY::!\n");
                 return;
             } else {
-                printf("Book was not issued.\n");
+                printf("BOOK WAS NOT ISSUED.\n");
                 return;
             }
         }
         temp = temp->next;
     }
-    printf("Book not found!\n");
+    printf("BOOK NOT FOUND::!\n");
 }
 
 
 void searchBook() {
     char keyword[100];
-    printf("Enter Book Title or Author to search: ");
+    printf("ENTER BOOK TITLE || AUTHOR NAME TO SEARCH: ");
     scanf(" %[^\n]s", keyword);
     struct Book *temp = head;
     int found = 0;
@@ -106,7 +106,7 @@ void searchBook() {
         temp = temp->next;
     }
     if (!found) {
-        printf("No books found matching the search criteria.\n");
+        printf("NO BOOK FOUND TO THIS CRITERIA.\n");
     }
 }
 
