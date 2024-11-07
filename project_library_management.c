@@ -125,14 +125,14 @@ int main() {
     int choice;
 
     while (1) {
-        printf("\nLibrary Management System\n");
-        printf("1. Add Book\n");
-        printf("2. View All Books\n");
-        printf("3. Issue Book\n");
-        printf("4. Return Book\n");
-        printf("5. Search Book\n");
-        printf("6. Exit\n");
-        printf("Enter your choice: ");
+        printf("\n :LIBRARY<->MANAGEMENT<->SYSYTEM: \n");
+        printf("1. ADD BOOK:\n");
+        printf("2. VIEW ALL LIST OF BOOKS:\n");
+        printf("3. ISSUE BOOK:\n");
+        printf("4. RETURN BOOK:\n");
+        printf("5. SEARCH BOOK:\n");
+        printf("6. EXIT\n");
+        printf("ENTER THE USER'S CHOICE: ");
         scanf("%d", &choice);
 
         switch (choice) {
@@ -156,7 +156,7 @@ int main() {
                 printf("Exiting...\n");
                 exit(0);
             default:
-                printf("Invalid choice! Please try again.\n");
+                printf(" choice .ERROR! Please try again.\n");
         }
     }
 
